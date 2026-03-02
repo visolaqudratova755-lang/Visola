@@ -4,187 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visola Qudratova | Shaxsiy Sahifa</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ASOSIY USLUBLAR */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            background-color: #f9f1f4; /* Mayin pushti fon */
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px 10px;
+        }
+
+        .main-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px; /* Mobil telefon ekrani o'lchami */
+            border-radius: 40px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        /* PROFIL QISMI */
+        .profile-circle {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #ff85a1; /* Pushti hoshiya */
+            margin: 0 auto 15px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            color: #880e4f;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .status {
+            color: #d81b60;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        /* MA'LUMOT BLOKLARI (Card style) */
+        .info-card {
+            background: #ffffff;
+            border: 1px solid #fce4ec;
+            border-left: 5px solid #f06292; /* Chap tarafdagi pushti chiziq */
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        .card-title {
+            color: #f06292;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-text {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* ALOQA TUGMALARI */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-email {
+            background-color: #ff85a1;
+            color: white;
+        }
+
+        .btn-tel {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        /* GALEREYA (Kichik ko'rinish) */
+        .gallery-preview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .gallery-preview img {
+            width: 100%;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="flower-bg-top">🌸</div>
+    <div class="main-container">
+        <div class="profile-circle">
+            <img src="profil_rasmi.jpg" alt="Visola">
+        </div>
 
-    <header>
-        <nav>
-            <div class="logo">Visola</div>
-            <ul>
-                <li><a href="#about">Men haqimda</a></li>
-                <li><a href="#gallery">Galereyam</a></li>
-                <li><a href="#contact">Bog'lanish</a></li>
-            </ul>
-        </nav>
-    </header>
+        <h1 class="name">Visola Qudratova</h1>
+        <span class="status">Dasturchi | ATT Talabasi</span>
 
-    <main class="container">
-        <section id="about" class="main-card">
-            <div class="profile-section">
-                <div class="img-frame">
-                    <img src="profil_rasmi.jpg" alt="Visola" class="profile-img">
-                </div>
-                <h1 class="name-title">Visola Qudratova</h1>
-                <p class="role-tag">Dasturchi | ATT Talabasi</p>
+        <div class="info-card">
+            <div class="card-title">👤 Men haqimda</div>
+            <p class="card-text">Men dasturchiman, turli xil dasturlar yarataman. Hozirda 2-kurs ATT talabasiman.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="card-title">🏛️ O'qish joyi</div>
+            <p class="card-text">Qarshi Davlat Universiteti, Matematika va kompyuter ilmlari fakulteti.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="card-title">🎯 Kelajakdagi maqsadim</div>
+            <p class="card-text">IT mutaxassisi bo'lish va har xil foydali dasturlar tuzish.</p>
+        </div>
+
+        <div class="info-card">
+            <div class="card-title">🌸 Galereyam</div>
+            <div class="gallery-preview">
+                <img src="milliy_kuylak.jpg" alt="1">
+                <img src="qizil_atirgullar.jpg" alt="2">
+                <img src="mandarinlar.jpg" alt="3">
             </div>
+        </div>
 
-            <div class="bio-grid">
-                <div class="bio-item">
-                    <h3>🌸 Men haqimda</h3>
-                    <p>Men dasturchiman, turli xil dasturlar yarataman. Hozirda Qarshi Davlat Universiteti, 2-kurs ATT talabasiman.</p>
-                </div>
-                <div class="bio-item">
-                    <h3>📚 O'qish joyi</h3>
-                    <p>Qarshi Davlat Universiteti, Matematika va kompyuter ilmlari fakulteti.</p>
-                </div>
-            </div>
-        </section>
+        <a href="mailto:visolaqudratova755@gmail.com" class="btn btn-email">
+            ✉️ visolaqudratova755@gmail.com
+        </a>
+        
+        <a href="tel:+998973139904" class="btn btn-tel">
+            📞 Tel: 99 313 99 04
+        </a>
 
-        <section id="skills" class="skills-section">
-            <h2 class="section-title">Qobiliyatlarim</h2>
-            <div class="skills-container">
-                <div class="skill-flower"><span>💻 HTML/CSS</span></div>
-                <div class="skill-flower"><span>🎨 Design</span></div>
-                <div class="skill-flower"><span>🐍 Python</span></div>
-                <div class="skill-flower"><span>🚀 Projects</span></div>
-            </div>
-        </section>
-
-        <section id="gallery" class="gallery-section">
-            <h2 class="section-title">Mening Galereyam 🌷</h2>
-            <div class="flower-grid">
-                <div class="gallery-card"><img src="milliy_kuylak.jpg" alt="Milliy libos"></div>
-                <div class="gallery-card"><img src="qizil_atirgullar.jpg" alt="Qizil gullar"></div>
-                <div class="gallery-card"><img src="pushti_atirgullar.jpg" alt="Pushti gullar"></div>
-                <div class="gallery-card"><img src="mandarinlar.jpg" alt="Mandarinlar"></div>
-                <div class="gallery-card"><img src="uzuklar.jpg" alt="Uzuklar"></div>
-                <div class="gallery-card"><img src="moviy_libos.jpg" alt="Moviy libos"></div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-card">
-            <h2 class="section-title">Bog'lanish</h2>
-            <div class="contact-info">
-                <a href="mailto:visolaqudratova755@gmail.com" class="btn-floral">📧 visolaqudratova755@gmail.com</a>
-                <a href="tel:+998973139904" class="btn-floral">📞 +998 97 313 99 04</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Visola Portfolio 🌸 Go'zallik va Kod uyg'unligi</p>
-    </footer>
+        <footer>
+            © 2026 Visola Portfolio
+        </footer>
+    </div>
 
 </body>
 </html>
-body {
-    background: #fff5f8; /* Juda mayin pushti fon */
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    color: #5d4037;
-    overflow-x: hidden;
-}
-
-/* GULLI BEZAKLAR */
-.flower-bg-top {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 150px;
-    opacity: 0.1;
-    z-index: -1;
-}
-
-header {
-    background: rgba(255, 182, 193, 0.9);
-    padding: 15px;
-    backdrop-filter: blur(5px);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 2px solid #ffc1d6;
-}
-
-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: auto; }
-.logo { font-family: 'Dancing Script', cursive; font-size: 30px; color: #d81b60; }
-nav ul { display: flex; list-style: none; gap: 20px; }
-nav a { text-decoration: none; color: #ad1457; font-weight: 600; }
-
-.container { max-width: 900px; margin: 30px auto; padding: 20px; }
-
-/* ASOSIY CARD */
-.main-card {
-    background: white;
-    border-radius: 30px;
-    padding: 40px;
-    box-shadow: 0 15px 35px rgba(216, 27, 96, 0.1);
-    border: 2px solid #fce4ec;
-    text-align: center;
-}
-
-.profile-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 6px solid #f8bbd0;
-    object-fit: cover;
-    transition: 0.5s;
-}
-
-.profile-img:hover { transform: rotate(5deg) scale(1.05); }
-
-.name-title { font-family: 'Dancing Script', cursive; font-size: 45px; color: #ad1457; margin: 15px 0; }
-.role-tag { background: #fce4ec; color: #d81b60; padding: 5px 20px; border-radius: 20px; display: inline-block; }
-
-.bio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
-.bio-item { background: #fff8fa; padding: 20px; border-radius: 20px; border: 1px solid #fce4ec; }
-
-/* GALEREYA */
-.gallery-section { margin-top: 50px; }
-.section-title { font-family: 'Dancing Script', cursive; font-size: 35px; color: #ad1457; text-align: center; }
-
-.flower-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.gallery-card {
-    background: white;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border: 1px solid #fce4ec;
-    transition: 0.3s;
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.gallery-card:hover { transform: translateY(-10px); border-color: #f06292; }
-
-/* TUGMALAR */
-.btn-floral {
-    display: block;
-    background: linear-gradient(45deg, #f06292, #d81b60);
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 10px 0;
-    transition: 0.3s;
-    font-weight: bold;
-}
-
-.btn-floral:hover { opacity: 0.9; transform: scale(1.02); }
-
-footer { text-align: center; padding: 40px; color: #ad1457; font-weight: bold; }
