@@ -1,132 +1,87 @@
-
-<html lang="uz">
+html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visola Portfolio</title>
+    <title>Visola Qudratovaning Shaxsiy Sahifasi</title>
     <style>
-        /* Umumiy ko'rinish va Gradient fon */
+        /* Umumiy ko'rinish */
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(180deg, #2ebfca 0%, #1a9299 100%);
-            height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 400px;
-            padding: 20px;
-        }.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-        }
-
-        /* Aloqa bo'limi (Oq karta) */
-        .contact-card {
-            background: white;
+            background-color: #f9f9f9;
             color: #333;
+        }
+
+        /* Konteyner - elementlarni tagma-tag tushiradi */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
             padding: 20px;
-            border-radius: 20px;
-            margin-bottom: 50px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
+            background: white;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 15px;
         }
 
-        .contact-card h2 {
-            margin: 0 0 10px 0;
-            font-size: 22px;
-        }
-
-        /* Profil rasmi (Gul) */
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 5px solid white;
-            object-fit: cover;
-            margin-bottom: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        /* Matnlar */
         h1 {
-            font-size: 32px;
-            margin: 10px 0;
+            color: #d81b60;
         }
 
-        .wave-emoji {
-            font-size: 40px;
-            margin: 10px 0;
+        /* Rasm uslubi */
+        .flower-img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
         }
 
-        p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
-
-        /* Tugma */
-        .btn {
-            display: inline-block;
+        /* Aloqa bo'limi */
+        .contact-info {
             margin-top: 20px;
-            padding: 12px 40px;
-            background-color: #5c7cfa;
-            color: white;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: #1a73e8;
             text-decoration: none;
-            border-radius: 25px;
             font-weight: bold;
-            transition: 0.3s;
         }
 
-        .btn:hover {
-            background-color: #4263eb;
-            transform: scale(1.05);
+        .contact-info p {
+            font-size: 18px;
         }
 
+        /* Footer */
         footer {
             margin-top: 30px;
             font-size: 14px;
-            opacity: 0.7;
+            color: #777;
         }
     </style>
 </head>
 <body>
-        <div class="contact-card">
-    <h3>Aloqa</h3>   
-    <p>Email: visolaqudratova755@gmail.com</p>
-    
-    <p>Tel: <a href="tel:+998973139904">+998 97 313 99 04</a></p>
-    
-    <p>Telegram: <a href="https://t.me/username" target="_blank">@username</a></p>
-            </div></h2>
-            <p>Email: visolaqudratova755@gmail.com</p>
+
+    <div class="container">
+        <h1>Xush kelibsiz!</h1>
+        
+        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=500" alt="Chiroyli gul" class="flower-img">
+        
+        <div class="contact-info">
+            <h3>Men bilan bog'lanish:</h3>
+            <p>📧 Email: <a href="mailto:visolaqudratova755@gmail.com">visolaqudratova755@gmail.com</a></p>
+            <p>📞 Telefon: <a href="tel:+998993139904">99 313 99 04</a></p>
         </div>
-
-        <img src="https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?q=80&w=500" alt="Gul rasmi" class="profile-img">
-
-        <h1>Salom, Men Visola</h1>
-        <div class="wave-emoji">👋</div>
-        <p>Mening shaxsiy veb-saytimga xush kelibsiz</p>
-
-        <a href="#" class="btn">Batafsil</a>
-
-        <footer>
-            © 2026 Visola Portfolio
-        </footer>
     </div>
+
+    <footer>
+        &copy; 2026 Visola Qudratova. Barcha huquqlar himoyalangan.
+    </footer>
 
 </body>
 </html>
