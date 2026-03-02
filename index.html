@@ -3,173 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visola Qudratova | Shaxsiy Sahifa</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Umumiy sozlamalar */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        /* Asosiy Kartochka */
-        .profile-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            width: 100%;
-            max-width: 450px;
-            border-radius: 30px;
-            padding: 40px 20px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        /* Gul rasmi uslubi */
-        .flower-container {
-            width: 130px;
-            height: 130px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            border: 5px solid #ff80ab;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
-        }
-
-        .flower-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        h1 {
-            color: #880e4f;
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-
-        .status {
-            color: #ad1457;
-            font-weight: 500;
-            font-size: 14px;
-            letter-spacing: 1px;
-            margin-bottom: 25px;
-            display: block;
-        }
-
-        /* Ma'lumot bloklari */
-        .info-box {
-            background: white;
-            padding: 15px;
-            border-radius: 15px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            transition: transform 0.3s ease;
-            text-align: left;
-            border-left: 4px solid #ff80ab;
-        }
-
-        .info-box:hover {
-            transform: translateY(-5px);
-        }
-
-        .info-box h3 {
-            font-size: 14px;
-            color: #ff4081;
-            margin-bottom: 5px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .info-box p {
-            font-size: 15px;
-            color: #444;
-            line-height: 1.4;
-        }
-
-        /* Tugmalar */
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            text-decoration: none;
-            padding: 12px;
-            border-radius: 12px;
-            margin-top: 10px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        .btn-email {
-            background: #ff80ab;
-            color: white;
-        }
-
-        .btn-phone {
-            background: #333;
-            color: white;
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-            letter-spacing: 1px;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #880e4f;
-        }
-    </style>
+    <title>Sitora | Shaxsiy Veb Sayt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="profile-card">
-        <div class="flower-container">
-            <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=500" alt="Gul">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Men haqimda</a></li>
+                <li><a href="#skills">Qobiliyatlar</a></li>
+                <li><a href="#gallery">Galereyam</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="container">
+        <h2 class="section-title">MEN HAQIMDA</h2>
+        <div class="about-content">
+            <p>Assalomu alaykum! Men Qarshi Davlat Universiteti, Matematika va kompyuter ilmlari fakultetida <strong>Axborot tizimlari va texnologiyalari</strong> yo'nalishi bo'yicha tahsil olaman.</p>
+            <p>Zamonaviy texnologiyalar, veb-dizayn va dasturlashga juda qiziqaman. Portfoliom orqali o'z mahoratimni oshirib borishni maqsad qilganman.</p>
+            <div class="profile-img">
+                <img src="profil-rasmi.jpg" alt="Sitora"> </div>
         </div>
+    </section>
 
-        <h1>Visola Qudratova</h1>
-        <span class="status">Dasturchi | ATT Talabasi</span>
+    <hr>
 
-        <div class="info-box">
-            <h3><i class="fas fa-user"></i> Men haqimda</h3>
-            <p>Men dasturchiman, turli xil dasturlar yarataman. Hozirda 2-kurs ATT talabasiman.</p>
+    <section id="skills" class="container">
+        <h2 class="section-title">QOBILIYATLARIM</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>💻 HTML / CSS / JS</h3>
+                <p>Zamonaviy interfeyslar yaratish</p>
+            </div>
+            <div class="skill-card">
+                <h3>🎨 Web Design</h3>
+                <p>Kreativ va qulay dizaynlar</p>
+            </div>
+            <div class="skill-card">
+                <h3>⚙️ Python / C++</h3>
+                <p>Algoritmik bilimlar</p>
+            </div>
+            <div class="skill-card">
+                <h3>🚀 Loyihalar</h3>
+                <p>G'oyalarni kodga aylantirish</p>
+            </div>
         </div>
+    </section>
 
-        <div class="info-box">
-            <h3><i class="fas fa-university"></i> O'qish joyi</h3>
-            <p>Qarshi Davlat Universiteti</p>
+    <hr>
+
+    <section id="gallery" class="container">
+        <h2 class="section-title">GALEREYAM</h2>
+        <div class="gallery-grid">
+            <img src="rasm1​Ikkinchi rasm (image_2.png - qizlar) -> milliy_kuylak.jpg
+​Uchinchi rasm (image_3.png - qizil gullar) -> qizil_atirgullar.jpg
+​To'rtinchi rasm (image_4.png - pushti gullar) -> pushti_atirgullar.jpg
+​Beshinchi rasm (image_5.png - mandarinlar) -> mandarinlar.jpg
         </div>
-
-        <div class="info-box">
-            <h3><i class="fas fa-bullseye"></i> Kelajakdagi maqsadim</h3>
-            <p>IT mutaxassisi bo'lish va xar xil foydali dasturlar tuzish.</p>
-        </div>
-
-        <a href="mailto:visolaqudratova755@gmail.com" class="btn btn-email">
-            <i class="fas fa-envelope"></i> Email: visolaqudratova755@gmail.com
-        </a>
-        
-        <a href="tel:+998993139904" class="btn btn-phone">
-            <i class="fas fa-phone-alt"></i> Tel: 99 313 99 04
-        </a>
-
-        <footer>&copy; 2026 Visola Portfolio</footer>
-    </div>
+    </section>
 
 </body>
-</html>
+</html>/* Umumiy uslublar */
+body {
+    background-color: #0d1b3e; /* To'q ko'k fon */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-title {
+    color: #ff007f; /* Pushti rang sarlavha uchun */
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Navigatsiya */
+header {
+    background: #162447;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Men haqimda rasm stili */
+.profile-img img {
+    width: 250px;
+    border-radius: 20px;
+    border: 3px solid #8a2be2;
+    margin-top: 20px;
+}
+
+/* Qobiliyatlar kartalari */
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #1a3a8a;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background-color: #254db1;
+    transform: scale(1.02);
+}
+
+.skill-card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Galereya */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    opacity: 0.8;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 40px 0;
+}
